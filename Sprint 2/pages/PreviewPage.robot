@@ -84,9 +84,3 @@ Entao o layout permanece consistente
     Wait Until Page Contains    ESG    30s
     Run Keyword And Ignore Error    Page Should Contain    Siga para a próxima tela.
     Log To Console    Layout validado: conteúdo principal permanece visível e sem quebra aparente
-
-
-#Quando aciono recurso do painel (Item para ser usado no Cenário 026)
-    #[Arguments]    ${seletor}
-    #Set Focus To Element    ${seletor}
-    #Press Keys    None    ENTER
