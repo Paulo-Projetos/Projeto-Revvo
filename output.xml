@@ -1,0 +1,2729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2026-05-02T14:11:09.386768" rpa="false" schemaversion="5">
+<suite id="s1" name="CT 025 BotaoEmTodasAsTelas" source="c:\Projeto Revvo\Sprint 2\tests\CT_025_BotaoEmTodasAsTelas.robot">
+<test id="s1-t1" name="CT-025 Validar Botão de Acessibilidade em Todas as Telas" line="12">
+<kw name="Dado que acesso o site" owner="LoginPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:10.039856" level="INFO">Opening browser 'Chrome' to base url 'https://builderstudio-qa-prod.smartlms.com.br/login'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-02T14:11:10.039082" elapsed="6.025676"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-02T14:11:16.065876" elapsed="0.058457"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:16.126311" level="INFO">Opening url 'https://builderstudio-qa-prod.smartlms.com.br/login'</msg>
+<arg>https://builderstudio-qa-prod.smartlms.com.br/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-05-02T14:11:16.125172" elapsed="0.634425"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=input[data-cy="login-password-input"]</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:16.760411" elapsed="0.073755"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:18.836543" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:16.835656" elapsed="2.001332"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:10.034693" elapsed="8.802679"/>
+</kw>
+<kw name="Quando realizo login via teclado" owner="LoginPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=maryda7aa2b3238dcfffd20cfde2eccad45demail</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:18.840692" elapsed="0.037375"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>id=maryda7aa2b3238dcfffd20cfde2eccad45demail</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-02T14:11:18.878548" elapsed="0.029278"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:18.909326" level="INFO">Sending key(s) ('CTRL+A',) to page.</msg>
+<msg time="2026-05-02T14:11:18.909642" level="INFO">Pressing special key CONTROL down.</msg>
+<msg time="2026-05-02T14:11:18.909795" level="INFO">Sending key A</msg>
+<msg time="2026-05-02T14:11:18.909910" level="INFO">Releasing special key CONTROL.</msg>
+<arg>None</arg>
+<arg>CTRL+A</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:18.908290" elapsed="0.027846"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:18.938100" level="INFO">Sending key(s) ('usuario.iterasys',) to page.</msg>
+<msg time="2026-05-02T14:11:18.938706" level="INFO">Sending keys usuario.iterasys</msg>
+<arg>None</arg>
+<arg>${USUARIO}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:18.936768" elapsed="0.136144"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=input[data-cy="login-password-input"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-02T14:11:19.073346" elapsed="0.059584"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:19.133860" level="INFO">Sending key(s) ('CTRL+A',) to page.</msg>
+<msg time="2026-05-02T14:11:19.134109" level="INFO">Pressing special key CONTROL down.</msg>
+<msg time="2026-05-02T14:11:19.134242" level="INFO">Sending key A</msg>
+<msg time="2026-05-02T14:11:19.134359" level="INFO">Releasing special key CONTROL.</msg>
+<arg>None</arg>
+<arg>CTRL+A</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:19.133314" elapsed="0.032642"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:19.167167" level="INFO">Sending key(s) ('Iterasys@123',) to page.</msg>
+<msg time="2026-05-02T14:11:19.167497" level="INFO">Sending keys Iterasys@123</msg>
+<arg>None</arg>
+<arg>${SENHA}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:19.166431" elapsed="0.191519"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=button[data-cy="login-submit"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-02T14:11:19.358417" elapsed="0.057735"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:19.417372" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:11:19.417717" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:11:19.417944" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:19.416626" elapsed="2.981522"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Área de trabalho</arg>
+<arg>30s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-02T14:11:22.398645" elapsed="0.032285"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:18.839419" elapsed="3.591864"/>
+</kw>
+<kw name="Entao sou direcionado para a area de trabalho" owner="HomePage">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:22.436262" level="INFO">Verifying element 'xpath=//div[contains(@class,'font-extrabold') and contains(.,'Área de trabalho')]' contains exact text 'Área de trabalho'.</msg>
+<arg>xpath=//div[contains(@class,'font-extrabold') and contains(.,'Área de trabalho')]</arg>
+<arg>Área de trabalho</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-02T14:11:22.435709" elapsed="0.086042"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:22.434958" elapsed="0.087175"/>
+</kw>
+<kw name="Quando acesso o projeto Learn 360 via teclado" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Área de trabalho</arg>
+<arg>30s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-02T14:11:22.523853" elapsed="0.022647"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:23.547403" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:22.546782" elapsed="1.001310"/>
+</kw>
+<kw name="Pressionar Tab Repetidas Vezes" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:23.552039" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:23.554158" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:23.555232" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:23.551083" elapsed="0.054510"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:23.906772" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:23.606026" elapsed="0.302276"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-05-02T14:11:23.550529" elapsed="0.358331"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:23.912860" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:23.913391" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:23.913759" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:23.911609" elapsed="0.024237"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:24.237829" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:23.936662" elapsed="0.301786"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-02T14:11:23.910860" elapsed="0.327943"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:24.240803" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:24.241362" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:24.241655" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:24.239795" elapsed="0.032570"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:24.574275" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:24.272788" elapsed="0.302077"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-02T14:11:24.239281" elapsed="0.335946"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:24.578603" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:24.579352" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:24.579937" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:24.577221" elapsed="0.032686"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:24.917194" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:24.610422" elapsed="0.307655"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-02T14:11:24.576047" elapsed="0.342513"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:24.921247" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:24.921712" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:24.921996" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:24.919919" elapsed="0.036889"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:25.257907" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:24.957220" elapsed="0.301131"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-02T14:11:24.919223" elapsed="0.339348"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:25.261631" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:25.261935" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:25.262143" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:25.260960" elapsed="0.107803"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:25.669797" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:25.369147" elapsed="0.300975"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-02T14:11:25.260548" elapsed="0.409740"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:25.671311" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:25.671517" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:25.671652" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:25.670816" elapsed="0.036426"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:26.009030" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:25.707890" elapsed="0.301622"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-05-02T14:11:25.670551" elapsed="0.339241"/>
+</iter>
+<var>${i}</var>
+<value>${quantidade}</value>
+<status status="PASS" start="2026-05-02T14:11:23.549725" elapsed="2.460468"/>
+</for>
+<arg>7</arg>
+<status status="PASS" start="2026-05-02T14:11:23.548898" elapsed="2.461621"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:26.011418" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:11:26.011631" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:11:26.011764" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:26.010920" elapsed="0.025953"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:22.523216" elapsed="3.514047"/>
+</kw>
+<kw name="Entao sou direcionado para a pagina dos projetos" owner="HomePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[normalize-space(.)='Learn360']</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:26.040124" elapsed="0.056268"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:26.097212" level="INFO">Verifying element 'xpath=//div[normalize-space(.)='Learn360']' contains exact text 'Learn360'.</msg>
+<arg>xpath=//div[normalize-space(.)='Learn360']</arg>
+<arg>Learn360</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-02T14:11:26.096806" elapsed="0.139610"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:26.039206" elapsed="0.197523"/>
+</kw>
+<kw name="E acesso o curso Fundamentos do ESG via teclado" owner="CursoPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(.,'Fundamentos do ESG')]</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:26.239688" elapsed="6.671308"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(.,'Fundamentos do ESG')]/ancestor::a</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-02T14:11:32.911387" elapsed="0.239483"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:33.152274" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:11:33.155772" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:11:33.156293" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:33.151542" elapsed="6.001114"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Fundamentos do ESG</arg>
+<arg>${timeout}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-02T14:11:39.153001" elapsed="0.138640"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:26.238999" elapsed="13.052924"/>
+</kw>
+<kw name="Entao sou direcionado para a pagina do curso" owner="CursoPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class,'font-extrabold') and contains(.,'Fundamentos do ESG')]</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:39.293449" elapsed="0.023386"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:39.317525" level="INFO">Verifying element 'xpath=//div[contains(@class,'font-extrabold') and contains(.,'Fundamentos do ESG')]' contains exact text 'Awtra 2025.33_Fundamentos do ESG (Liderança) (Cópia)'.</msg>
+<arg>xpath=//div[contains(@class,'font-extrabold') and contains(.,'Fundamentos do ESG')]</arg>
+<arg>Awtra 2025.33_Fundamentos do ESG (Liderança) (Cópia)</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-02T14:11:39.317115" elapsed="0.038816"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:39.292715" elapsed="0.063560"/>
+</kw>
+<kw name="Quando clico no botao Previa via teclado" owner="PreviewPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=a[data-cy="project-preview"]</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:39.358771" elapsed="0.050723"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=a[data-cy="project-preview"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-02T14:11:39.409945" elapsed="0.045362"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:39.457641" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:11:39.461041" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:11:39.465672" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:39.456438" elapsed="0.243222"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:42.700760" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:39.700093" elapsed="3.001481"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-05-02T14:11:42.702340" elapsed="0.016298"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-02T14:11:42.718913" elapsed="6.539443"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=iframe.preview-iframe</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:49.259242" elapsed="0.040363"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:49.300196" level="INFO">Selecting frame 'css=iframe.preview-iframe'.</msg>
+<arg>css=iframe.preview-iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2026-05-02T14:11:49.299927" elapsed="0.057625"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ESG</arg>
+<arg>30s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-02T14:11:49.357851" elapsed="0.033528"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:54.393013" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:49.391823" elapsed="5.002214"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:39.357605" elapsed="15.036864"/>
+</kw>
+<kw name="E aciono o botao Desbloquear via teclado" owner="PreviewPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Elemento Desbloquear Deve Existir" owner="PreviewPage">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:54.405219" level="INFO">Executing JavaScript:
+return document.querySelector('a.image-wrapper[data-loadpage="2313"]') !== null;
+Without any arguments.</msg>
+<msg time="2026-05-02T14:11:54.418392" level="INFO">${existe} = True</msg>
+<var>${existe}</var>
+<arg>return document.querySelector('a.image-wrapper[data-loadpage="2313"]') !== null;</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-05-02T14:11:54.403912" elapsed="0.014729"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${existe}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2026-05-02T14:11:54.419002" elapsed="0.000432"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:54.402216" elapsed="0.017456"/>
+</kw>
+<arg>30s</arg>
+<arg>1s</arg>
+<arg>Elemento Desbloquear Deve Existir</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-05-02T14:11:54.399952" elapsed="0.019924"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>css=a.image-wrapper[data-loadpage="2313"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-02T14:11:54.420291" elapsed="0.058364"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:54.480108" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:11:54.481448" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:11:54.481780" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:54.479160" elapsed="0.074610"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:57.555171" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:54.554238" elapsed="3.001742"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:54.397629" elapsed="3.159074"/>
+</kw>
+<kw name="Entao sou direcionado para a pagina principal" owner="PreviewPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[contains(.,'Boas-vindas ao nosso curso')]</arg>
+<arg>60s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:57.563447" elapsed="0.073884"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:57.561660" elapsed="0.076036"/>
+</kw>
+<kw name="E confirmo a existencia do botao Acessibilidade" owner="AcessibilidadePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=i.bi-universal-access</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:57.644430" elapsed="0.066412"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:57.751737" level="INFO">Element 'css=i.bi-universal-access' is displayed.</msg>
+<arg>css=i.bi-universal-access</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:57.711261" elapsed="0.041220"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:57.643154" elapsed="0.109569"/>
+</kw>
+<kw name="E aciono o botao Acessibilidade via teclado" owner="AcessibilidadePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=i.bi-universal-access</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:57.755758" elapsed="0.016465"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:57.788539" level="INFO">Element 'css=i.bi-universal-access' is displayed.</msg>
+<arg>css=i.bi-universal-access</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:11:57.772492" elapsed="0.016284"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:58.790005" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:57.788973" elapsed="1.001749"/>
+</kw>
+<kw name="Pressionar Tab Repetidas Vezes" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:58.794940" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:58.795376" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:58.795738" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:58.793963" elapsed="0.023178"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:59.119082" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:58.818213" elapsed="0.301545"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-05-02T14:11:58.793302" elapsed="0.326865"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:59.122129" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:59.122533" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:59.122828" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:59.121196" elapsed="0.030161"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:59.452813" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:59.152041" elapsed="0.301394"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-02T14:11:59.120673" elapsed="0.333184"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:59.455908" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:59.456300" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:59.456544" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:59.454986" elapsed="0.046695"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:11:59.803209" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:59.502212" elapsed="0.301671"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-02T14:11:59.454365" elapsed="0.349947"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:11:59.806396" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:11:59.806830" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:11:59.807108" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:11:59.805362" elapsed="0.039188"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:00.146604" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:11:59.845358" elapsed="0.301599"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-02T14:11:59.804876" elapsed="0.342261"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:00.148031" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:00.148196" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:00.148325" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:00.147636" elapsed="0.016563"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:00.466144" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:00.164656" elapsed="0.301778"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-02T14:12:00.147388" elapsed="0.319253"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:00.468578" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:00.468943" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:00.469192" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:00.467625" elapsed="0.024644"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:00.794213" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:00.493264" elapsed="0.301607"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-02T14:12:00.467147" elapsed="0.328168"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:00.797137" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:00.797534" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:00.797790" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:00.796237" elapsed="0.052703"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:01.150778" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:00.849431" elapsed="0.302047"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-05-02T14:12:00.795780" elapsed="0.356105"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:01.155396" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:01.155922" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:01.156211" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:01.153506" elapsed="0.034846"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:01.489739" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:01.188814" elapsed="0.301463"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-05-02T14:12:01.152781" elapsed="0.337771"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:01.492930" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:01.493425" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:01.493705" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:01.491749" elapsed="0.035809"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:01.829297" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:01.528160" elapsed="0.301843"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-05-02T14:12:01.491250" elapsed="0.339681"/>
+</iter>
+<var>${i}</var>
+<value>${quantidade}</value>
+<status status="PASS" start="2026-05-02T14:11:58.792299" elapsed="3.039099"/>
+</for>
+<arg>${quantidade_tabs}</arg>
+<status status="PASS" start="2026-05-02T14:11:58.791459" elapsed="3.040751"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:01.833891" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:12:01.834275" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:12:01.834543" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:01.832831" elapsed="0.069249"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:02.903219" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:01.902473" elapsed="1.001419"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:57.754822" elapsed="5.149617"/>
+</kw>
+<kw name="Entao sou direcionado para o painel de acessibilidade" owner="AcessibilidadePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=a11y-panel-title</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:02.911041" elapsed="0.027351"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:02.939339" level="INFO">Verifying element 'id=a11y-panel-title' contains exact text 'Acessibilidade'.</msg>
+<arg>id=a11y-panel-title</arg>
+<arg>Acessibilidade</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-02T14:12:02.938804" elapsed="0.029510"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:02.908048" elapsed="0.060473"/>
+</kw>
+<kw name="Quando aciono o botao Proxima Pagina via teclado a partir do painel aberto" owner="PreviewPage">
+<kw name="Pressionar Tab Repetidas Vezes" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:02.972158" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:02.972982" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:02.973100" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:02.971603" elapsed="0.020301"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:03.294266" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:02.992716" elapsed="0.302351"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-05-02T14:12:02.971298" elapsed="0.324364"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:03.298749" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:03.299245" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:03.299540" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:03.297230" elapsed="0.028732"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:03.627891" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:03.326539" elapsed="0.302001"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-02T14:12:03.296423" elapsed="0.332415"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:03.629936" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:03.630266" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:03.630518" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:03.629545" elapsed="0.017774"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:03.948680" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:03.647852" elapsed="0.301570"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-02T14:12:03.629269" elapsed="0.320651"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:03.952859" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:03.953437" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:03.953848" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:03.951473" elapsed="0.025002"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:04.278260" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:03.977024" elapsed="0.302018"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-02T14:12:03.950715" elapsed="0.328869"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:04.282080" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:04.282485" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:04.282762" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:04.281036" elapsed="0.020470"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:04.603419" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:04.302114" elapsed="0.302043"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-02T14:12:04.280306" elapsed="0.324259"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:04.606524" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:04.606912" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:04.607215" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:04.605577" elapsed="0.047872"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:04.954782" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:04.653907" elapsed="0.301556"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-02T14:12:04.605082" elapsed="0.350771"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:04.958030" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:04.958451" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:04.958708" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:04.956971" elapsed="0.032336"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:05.292215" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:04.990778" elapsed="0.302295"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-05-02T14:12:04.956294" elapsed="0.337109"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:05.295478" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:05.295878" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:05.296158" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:05.294382" elapsed="0.034211"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:05.630594" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:05.329402" elapsed="0.301936"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-05-02T14:12:05.293876" elapsed="0.337897"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:05.634447" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:05.635075" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:05.635509" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:05.633131" elapsed="0.029439"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:05.964200" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:05.663068" elapsed="0.301865"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-05-02T14:12:05.632474" elapsed="0.332901"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:05.967352" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:05.967744" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:05.968033" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:05.966419" elapsed="0.031876"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:06.300034" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:05.998788" elapsed="0.301939"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-05-02T14:12:05.965901" elapsed="0.335208"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:06.303091" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:06.303472" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:06.303731" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:06.302133" elapsed="0.031930"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:06.635957" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:06.334558" elapsed="0.302066"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2026-05-02T14:12:06.301631" elapsed="0.335332"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:06.638916" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:06.639287" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:06.639542" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:06.637993" elapsed="0.025407"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:06.964771" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:06.663996" elapsed="0.301429"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2026-05-02T14:12:06.637432" elapsed="0.328439"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:06.968459" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:06.968942" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:06.969298" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:06.967236" elapsed="0.025607"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:07.294259" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:06.993332" elapsed="0.301399"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2026-05-02T14:12:06.966544" elapsed="0.328389"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:07.296114" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:07.296416" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:07.296615" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:07.295514" elapsed="0.023723"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:07.620935" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:07.319713" elapsed="0.301908"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2026-05-02T14:12:07.295220" elapsed="0.326807"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:07.624140" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:07.624653" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:07.625053" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:07.623040" elapsed="0.040406"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:07.966550" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:07.664814" elapsed="0.302453"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2026-05-02T14:12:07.622521" elapsed="0.345247"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:07.969663" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:07.970183" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:07.970472" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:07.968739" elapsed="0.033747"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:08.303812" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:08.002901" elapsed="0.301439"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2026-05-02T14:12:07.968240" elapsed="0.336382"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:08.306467" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:08.306826" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:08.307070" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:08.305535" elapsed="0.030940"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:08.639688" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:08.337812" elapsed="0.302544"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2026-05-02T14:12:08.305075" elapsed="0.335668"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:08.643556" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:08.644057" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:08.644389" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:08.642182" elapsed="0.024891"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:08.969485" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:08.668250" elapsed="0.301976"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2026-05-02T14:12:08.641228" elapsed="0.329566"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:08.974276" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:08.975086" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:08.975764" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:08.973039" elapsed="0.026274"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:09.300754" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:09.000007" elapsed="0.301453"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2026-05-02T14:12:08.971638" elapsed="0.330230"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:09.303838" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:09.304260" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:09.304532" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:09.302868" elapsed="0.033885"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:09.638949" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:09.337843" elapsed="0.301704"/>
+</kw>
+<var name="${i}">19</var>
+<status status="PASS" start="2026-05-02T14:12:09.302360" elapsed="0.337556"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:09.641815" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:09.642186" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:09.642838" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:09.640901" elapsed="0.020325"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:09.963094" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:09.661820" elapsed="0.301612"/>
+</kw>
+<var name="${i}">20</var>
+<status status="PASS" start="2026-05-02T14:12:09.640414" elapsed="0.323208"/>
+</iter>
+<var>${i}</var>
+<value>${quantidade}</value>
+<status status="PASS" start="2026-05-02T14:12:02.970841" elapsed="6.992933"/>
+</for>
+<arg>21</arg>
+<status status="PASS" start="2026-05-02T14:12:02.969982" elapsed="6.993993"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:09.964751" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:12:09.964949" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:12:09.965082" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:09.964236" elapsed="0.027499"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:12.006354" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:09.992160" elapsed="2.014723"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:02.969160" elapsed="9.038032"/>
+</kw>
+<kw name="Entao sou direcionado para a pagina seguinte e confirmo a existencia do botao Acessibilidade" owner="PreviewPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=i.bi-universal-access</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:12.015953" elapsed="0.050090"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:12.084380" level="INFO">Element 'css=i.bi-universal-access' is displayed.</msg>
+<arg>css=i.bi-universal-access</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:12.066405" elapsed="0.018349"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:12.013749" elapsed="0.071219"/>
+</kw>
+<kw name="E aciono o botao Acessibilidade via teclado" owner="AcessibilidadePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=i.bi-universal-access</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:12.088300" elapsed="0.059065"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:12.203197" level="INFO">Element 'css=i.bi-universal-access' is displayed.</msg>
+<arg>css=i.bi-universal-access</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:12.147825" elapsed="0.055703"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:13.204456" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:12.203852" elapsed="1.000985"/>
+</kw>
+<kw name="Pressionar Tab Repetidas Vezes" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:13.207012" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:13.208207" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:13.208516" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:13.206497" elapsed="0.017727"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:13.527453" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:13.226258" elapsed="0.302055"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-05-02T14:12:13.206213" elapsed="0.322450"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:13.531366" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:13.531795" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:13.532071" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:13.530007" elapsed="0.023338"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:13.855021" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:13.553857" elapsed="0.301912"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-02T14:12:13.529274" elapsed="0.327727"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:13.858987" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:13.859493" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:13.860020" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:13.858022" elapsed="0.023255"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:14.183529" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:13.881942" elapsed="0.302251"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-02T14:12:13.857508" elapsed="0.327141"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:14.187197" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:14.187744" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:14.188157" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:14.185948" elapsed="0.028728"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:14.516437" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:14.215496" elapsed="0.301286"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-02T14:12:14.185305" elapsed="0.331616"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:14.517902" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:14.518127" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:14.518365" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:14.517415" elapsed="0.017536"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:14.836537" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:14.535348" elapsed="0.301502"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-02T14:12:14.517153" elapsed="0.319897"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:14.838899" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:14.839257" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:14.839506" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:14.837985" elapsed="0.017743"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:15.157075" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:14.856137" elapsed="0.301383"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-02T14:12:14.837526" elapsed="0.320260"/>
+</iter>
+<var>${i}</var>
+<value>${quantidade}</value>
+<status status="PASS" start="2026-05-02T14:12:13.205819" elapsed="1.952241"/>
+</for>
+<arg>${quantidade_tabs}</arg>
+<status status="PASS" start="2026-05-02T14:12:13.205301" elapsed="1.953078"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:15.159617" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:12:15.160183" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:12:15.160417" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:15.158774" elapsed="0.029771"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:16.189765" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:15.188979" elapsed="1.001280"/>
+</kw>
+<arg>6</arg>
+<status status="PASS" start="2026-05-02T14:12:12.087339" elapsed="4.103406"/>
+</kw>
+<kw name="Entao sou direcionado para o painel de acessibilidade" owner="AcessibilidadePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=a11y-panel-title</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:16.192091" elapsed="0.047171"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:16.240322" level="INFO">Verifying element 'id=a11y-panel-title' contains exact text 'Acessibilidade'.</msg>
+<arg>id=a11y-panel-title</arg>
+<arg>Acessibilidade</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-02T14:12:16.239713" elapsed="0.022536"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:16.191475" elapsed="0.070985"/>
+</kw>
+<kw name="Quando aciono o botao Proxima Pagina via teclado com painel aberto" owner="PreviewPage">
+<kw name="Pressionar Tab Repetidas Vezes" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:16.265872" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:16.266098" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:16.266239" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:16.265353" elapsed="0.013621"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:16.581379" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:16.279737" elapsed="0.302476"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-05-02T14:12:16.265050" elapsed="0.317676"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:16.585685" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:16.586307" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:16.586758" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:16.584280" elapsed="0.022985"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:16.909290" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:16.607953" elapsed="0.302395"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-02T14:12:16.583508" elapsed="0.327174"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:16.912588" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:16.912975" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:16.913238" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:16.911635" elapsed="0.017457"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:17.230907" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:16.929666" elapsed="0.301722"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-02T14:12:16.911153" elapsed="0.320457"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:17.233024" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:17.233305" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:17.233493" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:17.232331" elapsed="0.020769"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:17.554245" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:17.253535" elapsed="0.301689"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-02T14:12:17.231976" elapsed="0.323618"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:17.557513" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:17.557895" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:17.558197" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:17.556582" elapsed="0.022155"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:17.880563" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:17.579351" elapsed="0.301828"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-02T14:12:17.556079" elapsed="0.325405"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:17.883380" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:17.883758" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:17.884024" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:17.882453" elapsed="0.022023"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:18.207018" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:17.905338" elapsed="0.302310"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-02T14:12:17.881952" elapsed="0.326074"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:18.210247" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:18.210714" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:18.210998" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:18.209434" elapsed="0.017365"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:18.528723" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:18.227590" elapsed="0.301959"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-05-02T14:12:18.208506" elapsed="0.322147"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:18.532295" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:18.532689" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:18.533332" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:18.531510" elapsed="0.019007"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:18.851991" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:18.551006" elapsed="0.301658"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-05-02T14:12:18.531121" elapsed="0.321958"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:18.855133" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:18.855543" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:18.855807" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:18.854146" elapsed="0.021025"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:19.177413" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:18.876181" elapsed="0.301822"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-05-02T14:12:18.853579" elapsed="0.324699"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:19.181691" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:19.182072" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:19.182340" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:19.180595" elapsed="0.022009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:19.504055" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:19.203034" elapsed="0.301512"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-05-02T14:12:19.179677" elapsed="0.325144"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:19.506580" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:19.506901" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:19.507133" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:19.505704" elapsed="0.062250"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:19.869548" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:19.568417" elapsed="0.301809"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2026-05-02T14:12:19.505234" elapsed="0.365342"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:19.872369" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:19.872760" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:19.873003" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:19.871504" elapsed="0.025821"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:20.199129" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:19.898041" elapsed="0.301629"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2026-05-02T14:12:19.871055" elapsed="0.328891"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:20.201736" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:20.202095" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:20.202339" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:20.200843" elapsed="0.037962"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:20.540798" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:20.239520" elapsed="0.301917"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2026-05-02T14:12:20.200387" elapsed="0.341694"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:20.544699" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:20.545189" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:20.545468" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:20.543676" elapsed="0.038719"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:20.884054" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:20.582932" elapsed="0.301763"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2026-05-02T14:12:20.543135" elapsed="0.342041"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:20.887166" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:20.887549" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:20.887821" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:20.886190" elapsed="0.038483"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:21.226658" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:20.925291" elapsed="0.302632"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2026-05-02T14:12:20.885676" elapsed="0.344177"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:21.231978" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:21.232385" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:21.232650" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:21.230987" elapsed="0.030116"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:21.563663" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:21.262416" elapsed="0.301496"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2026-05-02T14:12:21.230439" elapsed="0.333585"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:21.565207" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:21.566548" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:21.566826" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:21.564418" elapsed="0.024104"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:21.890106" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:21.588935" elapsed="0.301544"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2026-05-02T14:12:21.564188" elapsed="0.326490"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:21.892661" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:21.893350" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:21.893796" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:21.891231" elapsed="0.023458"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:22.216023" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:21.915270" elapsed="0.301056"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2026-05-02T14:12:21.890943" elapsed="0.325536"/>
+</iter>
+<var>${i}</var>
+<value>${quantidade}</value>
+<status status="PASS" start="2026-05-02T14:12:16.264688" elapsed="5.951904"/>
+</for>
+<arg>18</arg>
+<status status="PASS" start="2026-05-02T14:12:16.264111" elapsed="5.952639"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:22.217342" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:12:22.217491" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:12:22.217579" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:22.216949" elapsed="0.022484"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:24.240704" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:22.239907" elapsed="2.001491"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:16.263344" elapsed="7.978593"/>
+</kw>
+<kw name="Entao sou direcionado para a pagina seguinte e confirmo a existencia do botao Acessibilidade" owner="PreviewPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=i.bi-universal-access</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:24.253217" elapsed="0.033493"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:24.301498" level="INFO">Element 'css=i.bi-universal-access' is displayed.</msg>
+<arg>css=i.bi-universal-access</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:24.286998" elapsed="0.014744"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:24.250963" elapsed="0.050922"/>
+</kw>
+<kw name="E aciono o botao Acessibilidade via teclado bloco 4" owner="AcessibilidadePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=i.bi-universal-access</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:24.303093" elapsed="0.067012"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:24.433861" level="INFO">Element 'css=i.bi-universal-access' is displayed.</msg>
+<arg>css=i.bi-universal-access</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:24.370550" elapsed="0.063634"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:25.435327" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:24.434421" elapsed="1.001350"/>
+</kw>
+<kw name="Pressionar Tab Repetidas Vezes" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:25.438327" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:25.438686" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:25.438896" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:25.437607" elapsed="0.019461"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:25.758312" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:25.457518" elapsed="0.301080"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-05-02T14:12:25.437245" elapsed="0.321596"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:25.761655" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:25.762343" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:25.762803" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:25.760203" elapsed="0.023015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:26.084631" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:25.783642" elapsed="0.301763"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-02T14:12:25.759628" elapsed="0.326108"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:26.087748" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:26.088114" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:26.088361" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:26.086760" elapsed="0.036340"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:26.425313" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:26.123771" elapsed="0.303244"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-02T14:12:26.086235" elapsed="0.342936"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:26.432578" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:26.433102" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:26.433400" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:26.431063" elapsed="0.025498"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:26.760477" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:26.457804" elapsed="0.303428"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-02T14:12:26.430257" elapsed="0.331425"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:26.764326" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:26.764845" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:26.765215" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:26.763068" elapsed="0.028178"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:27.093536" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:26.791743" elapsed="0.302382"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-02T14:12:26.762373" elapsed="0.332079"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:27.096297" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:27.096661" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:27.096904" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:27.095394" elapsed="0.018123"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:27.415840" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:27.114874" elapsed="0.301556"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-02T14:12:27.094903" elapsed="0.321825"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:27.418770" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:27.419154" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:27.419417" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:27.417812" elapsed="0.033626"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:27.753254" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:27.452343" elapsed="0.301486"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-05-02T14:12:27.417185" elapsed="0.336934"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:27.756001" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:27.756357" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:27.756603" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:27.755088" elapsed="0.036962"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:28.093775" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:27.792928" elapsed="0.301448"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-05-02T14:12:27.754615" elapsed="0.340211"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:28.096750" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:28.097126" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:28.097431" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:28.095808" elapsed="0.028135"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:28.427552" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:28.125020" elapsed="0.303439"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-05-02T14:12:28.095300" elapsed="0.333784"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:28.432094" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:28.432529" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:28.432837" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:28.431018" elapsed="0.026206"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:28.760920" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:28.458622" elapsed="0.303104"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-05-02T14:12:28.430138" elapsed="0.331895"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:28.764585" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:28.765307" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:28.765670" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:28.763485" elapsed="0.024464"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:29.089730" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:28.788494" elapsed="0.301992"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2026-05-02T14:12:28.762860" elapsed="0.328100"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:29.096414" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:29.097822" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:29.098442" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:29.093723" elapsed="0.038582"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:29.435535" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:29.132999" elapsed="0.304521"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2026-05-02T14:12:29.092125" elapsed="0.345840"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:29.440949" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:29.441296" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:29.441711" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:29.439651" elapsed="0.024827"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:29.766376" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:29.465230" elapsed="0.302045"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2026-05-02T14:12:29.438595" elapsed="0.329005"/>
+</iter>
+<var>${i}</var>
+<value>${quantidade}</value>
+<status status="PASS" start="2026-05-02T14:12:25.436742" elapsed="4.331158"/>
+</for>
+<arg>${quantidade_tabs}</arg>
+<status status="PASS" start="2026-05-02T14:12:25.436158" elapsed="4.332144"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:29.769848" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:12:29.771526" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:12:29.772112" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:29.768798" elapsed="0.048222"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:30.819255" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:29.817731" elapsed="1.002183"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:24.302467" elapsed="6.517940"/>
+</kw>
+<kw name="Entao sou direcionado para o painel de acessibilidade" owner="AcessibilidadePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=a11y-panel-title</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-02T14:12:30.823603" elapsed="0.028556"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:30.852925" level="INFO">Verifying element 'id=a11y-panel-title' contains exact text 'Acessibilidade'.</msg>
+<arg>id=a11y-panel-title</arg>
+<arg>Acessibilidade</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-02T14:12:30.852558" elapsed="0.021905"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:30.822453" elapsed="0.052319"/>
+</kw>
+<kw name="E aciono o botao Acessibilidade via teclado bloco 4 para encerrar" owner="AcessibilidadePage">
+<kw name="Pressionar Tab Repetidas Vezes" owner="common">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:30.878288" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:30.879071" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:30.879339" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:30.877563" elapsed="0.018290"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:31.196878" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:30.896230" elapsed="0.301311"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-05-02T14:12:30.877278" elapsed="0.320692"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:31.199979" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:31.200373" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:31.200650" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:31.198998" elapsed="0.020732"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:31.521308" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:31.220354" elapsed="0.301314"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-05-02T14:12:31.198492" elapsed="0.323365"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:31.523378" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:31.523654" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:31.523845" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:31.522779" elapsed="0.016858"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:31.841364" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:31.540091" elapsed="0.302040"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-05-02T14:12:31.522159" elapsed="0.320323"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:31.844792" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:31.845200" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:31.845465" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:31.843798" elapsed="0.027705"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:32.173786" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:31.872358" elapsed="0.302117"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-05-02T14:12:31.843230" elapsed="0.331869"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:32.178104" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:32.178713" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:32.179218" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:32.176819" elapsed="0.020181"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:32.498371" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:32.197602" elapsed="0.301439"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-05-02T14:12:32.175998" elapsed="0.323448"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:32.501391" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:32.501771" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:32.502030" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:32.500451" elapsed="0.019249"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:32.821546" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:32.520453" elapsed="0.301775"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-05-02T14:12:32.499948" elapsed="0.322703"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:32.826931" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:32.827637" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:32.828055" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:32.824248" elapsed="0.021998"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:33.147735" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:32.846725" elapsed="0.301718"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-05-02T14:12:32.823491" elapsed="0.325355"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:33.150771" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:33.151158" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:33.151418" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:33.149832" elapsed="0.021566"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:33.473206" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:33.172122" elapsed="0.301595"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-05-02T14:12:33.149331" elapsed="0.324658"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:33.477299" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:33.477854" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:33.478121" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:33.474820" elapsed="0.017987"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:33.794744" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:33.493436" elapsed="0.301869"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-05-02T14:12:33.474393" elapsed="0.321234"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:33.797575" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:33.797953" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:33.798209" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:33.796600" elapsed="0.019103"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:34.117157" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:33.816228" elapsed="0.301658"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-05-02T14:12:33.796097" elapsed="0.322261"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:34.120563" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:34.121014" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:34.121341" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:34.119556" elapsed="0.028652"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:34.449468" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:34.148682" elapsed="0.301507"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2026-05-02T14:12:34.119019" elapsed="0.331557"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:34.452527" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:34.452917" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:34.453182" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:34.451571" elapsed="0.021151"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:34.774255" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:34.473372" elapsed="0.301421"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2026-05-02T14:12:34.451084" elapsed="0.323991"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:34.778640" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:34.779243" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:34.779555" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:34.777452" elapsed="0.044091"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:35.123175" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:34.822232" elapsed="0.301613"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2026-05-02T14:12:34.776682" elapsed="0.347651"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:35.127545" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:35.128222" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:35.128771" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:35.125376" elapsed="0.044415"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:35.471299" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:35.170351" elapsed="0.301649"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2026-05-02T14:12:35.124834" elapsed="0.347593"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:35.475183" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:35.475600" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:35.476482" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:35.473722" elapsed="0.027703"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:35.802770" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:35.501786" elapsed="0.301656"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2026-05-02T14:12:35.473082" elapsed="0.331059"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:35.807544" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:35.808006" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:35.808281" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:35.806149" elapsed="0.021410"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:36.131002" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:35.828642" elapsed="0.302677"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2026-05-02T14:12:35.805141" elapsed="0.326476"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:36.133755" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:36.134230" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:36.134494" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:36.132769" elapsed="0.017596"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:36.451618" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:36.150822" elapsed="0.301458"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2026-05-02T14:12:36.132228" elapsed="0.320474"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:36.454641" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:36.455037" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:36.455347" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:36.453678" elapsed="0.020226"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:36.775488" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:36.474689" elapsed="0.301616"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2026-05-02T14:12:36.453195" elapsed="0.323474"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:36.779463" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:36.779939" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:36.780295" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:36.778000" elapsed="0.021814"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:37.102587" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:36.800748" elapsed="0.302453"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2026-05-02T14:12:36.777312" elapsed="0.326265"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:37.105881" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:37.106252" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:37.106500" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:37.104842" elapsed="0.019220"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:37.426453" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:37.124489" elapsed="0.303069"/>
+</kw>
+<var name="${i}">19</var>
+<status status="PASS" start="2026-05-02T14:12:37.104176" elapsed="0.323872"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:37.431135" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:37.431708" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:37.432362" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:37.429666" elapsed="0.021979"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:37.753066" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:37.452099" elapsed="0.301622"/>
+</kw>
+<var name="${i}">20</var>
+<status status="PASS" start="2026-05-02T14:12:37.428760" elapsed="0.325379"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:37.756326" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:37.756684" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:37.756946" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:37.755460" elapsed="0.031154"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:38.090010" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:37.787863" elapsed="0.302818"/>
+</kw>
+<var name="${i}">21</var>
+<status status="PASS" start="2026-05-02T14:12:37.754852" elapsed="0.336465"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:38.093707" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:38.094123" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:38.094385" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:38.092531" elapsed="0.027642"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:38.422134" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:38.120935" elapsed="0.301554"/>
+</kw>
+<var name="${i}">22</var>
+<status status="PASS" start="2026-05-02T14:12:38.091967" elapsed="0.330804"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:38.424705" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:38.425059" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:38.425452" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:38.423740" elapsed="0.021205"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:38.746994" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:38.445940" elapsed="0.301594"/>
+</kw>
+<var name="${i}">23</var>
+<status status="PASS" start="2026-05-02T14:12:38.423248" elapsed="0.324524"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:38.749181" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:38.749403" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:38.749523" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:38.748484" elapsed="0.020543"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:39.070397" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:38.769527" elapsed="0.301319"/>
+</kw>
+<var name="${i}">24</var>
+<status status="PASS" start="2026-05-02T14:12:38.748106" elapsed="0.322991"/>
+</iter>
+<iter>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:39.072983" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2026-05-02T14:12:39.073335" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2026-05-02T14:12:39.073569" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:39.072114" elapsed="0.020905"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:39.394078" level="INFO">Slept 300 milliseconds.</msg>
+<arg>0.3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:39.093448" elapsed="0.301196"/>
+</kw>
+<var name="${i}">25</var>
+<status status="PASS" start="2026-05-02T14:12:39.071620" elapsed="0.323286"/>
+</iter>
+<var>${i}</var>
+<value>${quantidade}</value>
+<status status="PASS" start="2026-05-02T14:12:30.876824" elapsed="8.518359"/>
+</for>
+<arg>${quantidade_tabs}</arg>
+<status status="PASS" start="2026-05-02T14:12:30.876124" elapsed="8.519418"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:39.396921" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2026-05-02T14:12:39.397300" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2026-05-02T14:12:39.397549" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:39.395994" elapsed="0.021274"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-02T14:12:40.418368" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-02T14:12:39.417703" elapsed="1.001513"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:30.875316" elapsed="9.544579"/>
+</kw>
+<kw name="Encerrar Sessao de Teste" owner="common" type="TEARDOWN">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Fazer Logout" owner="common">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:40.435595" level="INFO">Opening url 'https://builderstudio-qa-prod.smartlms.com.br/'</msg>
+<arg>https://builderstudio-qa-prod.smartlms.com.br/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-05-02T14:12:40.435004" elapsed="1.184475"/>
+</kw>
+<arg>Go To</arg>
+<arg>https://builderstudio-qa-prod.smartlms.com.br/</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:40.434146" elapsed="1.185705"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:46.881768" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-170.png"&gt;&lt;img src="selenium-screenshot-170.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-02T14:12:46.882237" level="FAIL">Element 'css=button[data-cy="user-menu"]' not visible after 5 seconds.</msg>
+<arg>css=button[data-cy="user-menu"]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-05-02T14:12:41.620888" elapsed="5.268697">Element 'css=button[data-cy="user-menu"]' not visible after 5 seconds.</status>
+</kw>
+<arg>Wait Until Element Is Visible</arg>
+<arg>css=button[data-cy="user-menu"]</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:41.620291" elapsed="5.269664"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:46.891069" level="INFO">Clicking element 'css=button[data-cy="user-menu"]'.</msg>
+<msg time="2026-05-02T14:12:46.993332" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-171.png"&gt;&lt;img src="selenium-screenshot-171.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-02T14:12:46.993844" level="FAIL">Element with locator 'css=button[data-cy="user-menu"]' not found.</msg>
+<arg>css=button[data-cy="user-menu"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-02T14:12:46.890707" elapsed="0.113413">Element with locator 'css=button[data-cy="user-menu"]' not found.</status>
+</kw>
+<arg>Click Element</arg>
+<arg>css=button[data-cy="user-menu"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:46.890268" elapsed="0.114141"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:52.278685" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-172.png"&gt;&lt;img src="selenium-screenshot-172.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-02T14:12:52.279192" level="FAIL">Element 'xpath=//a[contains(.,'Sair') or contains(.,'Logout')]' not visible after 5 seconds.</msg>
+<arg>xpath=//a[contains(.,'Sair') or contains(.,'Logout')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-05-02T14:12:47.005178" elapsed="5.276122">Element 'xpath=//a[contains(.,'Sair') or contains(.,'Logout')]' not visible after 5 seconds.</status>
+</kw>
+<arg>Wait Until Element Is Visible</arg>
+<arg>xpath=//a[contains(.,'Sair') or contains(.,'Logout')]</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:47.004725" elapsed="5.276971"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:52.282866" level="INFO">Clicking element 'xpath=//a[contains(.,'Sair') or contains(.,'Logout')]'.</msg>
+<msg time="2026-05-02T14:12:52.378465" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-173.png"&gt;&lt;img src="selenium-screenshot-173.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-02T14:12:52.379808" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7b2a4a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff7b2a4a950+14eb0]
+	chromedriver!(No symbol) [0x7ff7b27bd4d6]
+	chromedriver!(No symbol) [0x7ff7b28182a4]
+	chromedriver!(No symbol) [0x7ff7b280b1c6]
+	chromedriver!(No symbol) [0x7ff7b284002a]
+	chromedriver!(No symbol) [0x7ff7b280aa46]
+	chromedriver!(No symbol) [0x7ff7b286483b]
+	chromedriver!(No symbol) [0x7ff7b28090e8]
+	chromedriver!(No symbol) [0x7ff7b2809fc3]
+	chromedriver!GetHandleVerifier [0x7ff7b2d60149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff7b2d5a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff7b2d7c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff7b2a67cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff7b2a7087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff7b2a540e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff7b2a54296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff7b2a38737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb4f87e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffb5056c3fc+2c]
+</msg>
+<arg>xpath=//a[contains(.,'Sair') or contains(.,'Logout')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-02T14:12:52.282566" elapsed="0.107854">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7b2a4a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff7b2a4a950+14eb0]
+	chromedriver!(No symbol) [0x7ff7b27bd4d6]
+	chromedriver!(No symbol) [0x7ff7b28182a4]
+	chromedriver!(No symbol) [0x7ff7b280b1c6]
+	chromedriver!(No symbol) [0x7ff7b284002a]
+	chromedriver!(No symbol) [0x7ff7b280aa46]
+	chromedriver!(No symbol) [0x7ff7b286483b]
+	chromedriver!(No symbol) [0x7ff7b28090e8]
+	chromedriver!(No symbol) [0x7ff7b2809fc3]
+	chromedriver!GetHandleVerifier [0x7ff7b2d60149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff7b2d5a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff7b2d7c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff7b2a67cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff7b2a7087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff7b2a540e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff7b2a54296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff7b2a38737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb4f87e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffb5056c3fc+2c]
+</status>
+</kw>
+<arg>Click Element</arg>
+<arg>xpath=//a[contains(.,'Sair') or contains(.,'Logout')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:52.282110" elapsed="0.108780"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:40.432859" elapsed="11.958458"/>
+</kw>
+<arg>Fazer Logout</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:40.431367" elapsed="11.960058"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-05-02T14:12:52.391994" elapsed="0.029047"/>
+</kw>
+<arg>Delete All Cookies</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:52.391607" elapsed="0.029642"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:52.422329" level="INFO">Executing JavaScript:
+window.localStorage.clear();
+Without any arguments.</msg>
+<arg>window.localStorage.clear();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-05-02T14:12:52.421775" elapsed="0.015700"/>
+</kw>
+<arg>Execute Javascript</arg>
+<arg>window.localStorage.clear();</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:52.421457" elapsed="0.016211"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-05-02T14:12:52.438528" level="INFO">Executing JavaScript:
+window.sessionStorage.clear();
+Without any arguments.</msg>
+<arg>window.sessionStorage.clear();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-05-02T14:12:52.438117" elapsed="0.010646"/>
+</kw>
+<arg>Execute Javascript</arg>
+<arg>window.sessionStorage.clear();</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-05-02T14:12:52.437858" elapsed="0.011216"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-02T14:12:52.449420" elapsed="2.746089"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:12:40.427952" elapsed="14.767893"/>
+</kw>
+<status status="PASS" start="2026-05-02T14:11:10.032672" elapsed="105.163692"/>
+</test>
+<status status="PASS" start="2026-05-02T14:11:09.393063" elapsed="105.806476"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="CT 025 BotaoEmTodasAsTelas" id="s1" pass="1" fail="0" skip="0">CT 025 BotaoEmTodasAsTelas</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
