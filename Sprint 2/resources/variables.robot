@@ -1,6 +1,6 @@
 *** Variables ***
-${url}    https://builderstudio-qa-prod.smartlms.com.br/login
+${url}    https://builderstudio-xxxxxxxxxxxxxxxxxxxxxx
 ${browser}    Chrome        
 ${timeout}    30s
-${USUARIO}    usuario.iterasys
-${SENHA}      Iterasys@123
+${USUARIO}    xxxxxxxx.xxxxxxxx
+${SENHA}      xxxxxxxx@xxxxxxxx

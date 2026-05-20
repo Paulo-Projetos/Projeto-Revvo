@@ -6,7 +6,7 @@ Resource   ../resources/variables.robot
 Dado que acesso o site
     Open Browser    ${url}    Chrome
     Maximize Browser Window
-    Go To    https://builderstudio-qa-prod.smartlms.com.br/login
+    Go To    https://buildersxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     Wait Until Element Is Visible    css=input[data-cy="login-password-input"]    ${timeout}
     Sleep    2s                             
 Quando realizo login via teclado

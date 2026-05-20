@@ -10,7 +10,7 @@ Pressionar Tab Repetidas Vezes
         Sleep    0.3s
     END
 Fazer Logout
-    Run Keyword And Ignore Error    Go To    https://builderstudio-qa-prod.smartlms.com.br/
+    Run Keyword And Ignore Error    Go To    https://buildersxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     Run Keyword And Ignore Error    Wait Until Element Is Visible    css=button[data-cy="user-menu"]    5s
     Run Keyword And Ignore Error    Click Element    css=button[data-cy="user-menu"]
     Run Keyword And Ignore Error    Wait Until Element Is Visible    xpath=//a[contains(.,'Sair') or contains(.,'Logout')]    5s
